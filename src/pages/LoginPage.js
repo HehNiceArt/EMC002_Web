@@ -7,6 +7,7 @@ export default function LoginPage() {
         <div>
             <Navbar />
             LoginPage
+            wdad
 
         </div>
     )
