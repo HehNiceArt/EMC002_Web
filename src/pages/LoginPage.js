@@ -1,14 +1,11 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Login from "../components/Login";
 
 /*Andrei Quirante*/
 export default function LoginPage() {
     return (
         <div>
-            <Navbar />
-            LoginPage
-            wdad
-
+            <Login />
         </div>
     )
 }
