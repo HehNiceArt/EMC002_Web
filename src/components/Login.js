@@ -1,6 +1,7 @@
 import React from "react";
 import './css/Login.css'
 import LoginForm from "./LoginForm";
+import RegistrationForm from "./RegistrationForm";
 
 export default function Login() {
     return (
@@ -12,7 +13,8 @@ export default function Login() {
                             <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M650-80 250-480l400-400 61 61.67L372.67-480 711-141.67 650-80Z" /></svg>
                         </div>
                     </div>
-                    <LoginForm />
+                    {/*<LoginForm />*/}
+                    <RegistrationForm />
                 </div>
             </div>
         </div>
