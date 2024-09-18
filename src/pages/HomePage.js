@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 /* Cicero Barasi */
 export default function HomePage() {
@@ -7,6 +8,7 @@ export default function HomePage() {
         <div>
             <Navbar />
             Home Page
+            <Footer/>
         </div>
     )
 }
