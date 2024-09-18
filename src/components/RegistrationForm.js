@@ -38,12 +38,27 @@ const RegistrationForm = (props) => {
                     </div>
                     <div className="Login-LastName">
                         <p>Last Name</p>
-                        <input
+                        <input required
                             value={lastName}
                             onChange={(e) => setLastName(e.target.value)}
                             placeholder="Ex. Doe"
                             className="inputBox" />
                     </div>
+                </div>
+                <div className="Login-Password">
+                    <p>Password</p>
+                    <input
+                        type="password"
+                        value={password}
+                        onChange={(e)=> setPassword(e.target.value)}
+                        className="inputBox"/>
+                    <p>Confirm Password</p>
+                    <input
+                        type="password"
+                        value={confirmPassword}
+                        onChange={(e)=> setConfirmPassword(e.target.value)}
+                        className="inputBox"/>
+
                 </div>
                 <button onClick={onButtonClick} className="loginButton">Register</button>
             </div>
