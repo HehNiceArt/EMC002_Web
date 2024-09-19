@@ -9,6 +9,14 @@ const RegistrationForm = (props) => {
     const [lastName, setLastName] = useState('');
 
     const onButtonClick = () => {
+        if (!email || !firstName || !lastName || !password || !confirmPassword) {
+            alert("Please fill in all required fields.");
+            return;
+        }
+        if (confirmPassword !== password) {
+            alert("Password is incorrect!");
+            return;
+        }
         console.log("Email: ", email);
         console.log("firstName: ", firstName);
         console.log("lastName: ", lastName);
@@ -22,6 +30,7 @@ const RegistrationForm = (props) => {
                 <div className="Login-Email">
                     <p>Email Address</p>
                     <input
+                        required
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Enter your email"
