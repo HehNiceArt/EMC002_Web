@@ -9,6 +9,14 @@ const RegistrationForm = (props) => {
     const [lastName, setLastName] = useState('');
 
     const onButtonClick = () => {
+        if (!email || !firstName || !lastName || !password || !confirmPassword) {
+            alert("Please fill in all required fields.");
+            return;
+        }
+        if (confirmPassword !== password) {
+            alert("Password is incorrect!");
+            return;
+        }
         console.log("Email: ", email);
         console.log("firstName: ", firstName);
         console.log("lastName: ", lastName);
@@ -17,11 +25,12 @@ const RegistrationForm = (props) => {
     }
     return (
         <div className="Login-Form">
-            <div className="Login-FormContainer">
+            <div className="Login-SignUpContainer">
                 <h1>Sign Up/Register</h1>
                 <div className="Login-Email">
                     <p>Email Address</p>
                     <input
+                        required
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Enter your email"
@@ -36,6 +45,7 @@ const RegistrationForm = (props) => {
                             placeholder="Ex. John"
                             className="inputBox" />
                     </div>
+                    <div style={{ width: '20%' }}></div>
                     <div className="Login-LastName">
                         <p>Last Name</p>
                         <input required
@@ -50,14 +60,14 @@ const RegistrationForm = (props) => {
                     <input
                         type="password"
                         value={password}
-                        onChange={(e)=> setPassword(e.target.value)}
-                        className="inputBox"/>
+                        onChange={(e) => setPassword(e.target.value)}
+                        className="inputBox" />
                     <p>Confirm Password</p>
                     <input
                         type="password"
                         value={confirmPassword}
-                        onChange={(e)=> setConfirmPassword(e.target.value)}
-                        className="inputBox"/>
+                        onChange={(e) => setConfirmPassword(e.target.value)}
+                        className="inputBox" />
 
                 </div>
                 <button onClick={onButtonClick} className="loginButton">Register</button>

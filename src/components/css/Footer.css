@@ -1,7 +1,7 @@
 .Footer-Container {
     width: 100%;
     background-color: rgba(96, 33, 33, 1);
-    height: 50vh;
+    height: auto;
     padding: 20px 50px 20px 50px;
 }
 
@@ -34,9 +34,8 @@ p {
 }
 
 .Footer-Trademark {
-    padding: 50px;
+    padding: 50px 50px 0 50px;
     text-align: center;
-    justify-content: center;
 }
 
 .Watermark {
