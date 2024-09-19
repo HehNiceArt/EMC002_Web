@@ -17,7 +17,7 @@ const RegistrationForm = (props) => {
     }
     return (
         <div className="Login-Form">
-            <div className="Login-FormContainer">
+            <div className="Login-SignUpContainer">
                 <h1>Sign Up/Register</h1>
                 <div className="Login-Email">
                     <p>Email Address</p>
@@ -36,6 +36,7 @@ const RegistrationForm = (props) => {
                             placeholder="Ex. John"
                             className="inputBox" />
                     </div>
+                    <div style={{ width: '20%' }}></div>
                     <div className="Login-LastName">
                         <p>Last Name</p>
                         <input
@@ -44,6 +45,25 @@ const RegistrationForm = (props) => {
                             placeholder="Ex. Doe"
                             className="inputBox" />
                     </div>
+                </div>
+                <div className="Login-Pass">
+                    <div className="Login-Password">
+                        <p>Password</p>
+                        <input
+                            type="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            className="inputBox" />
+                    </div>
+                    <div className="Login-ConfirmPassword">
+                        <p>Confirm Password</p>
+                        <input
+                            type="password"
+                            value={confirmPassword}
+                            onChange={(e) => setConfirmPassword(e.target.value)}
+                            className="inputBox" />
+                    </div>
+
                 </div>
                 <button onClick={onButtonClick} className="loginButton">Register</button>
             </div>
