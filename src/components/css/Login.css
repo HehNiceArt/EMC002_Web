@@ -71,7 +71,7 @@
 }
 
 .Login-FormContainer>h1 {
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     font-size: 48px;
 }
 
@@ -85,10 +85,12 @@
 .Login-FirstName {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .Login-LastName {
     display: flex;
+    width: 50%;
     flex-direction: column;
 }
 
@@ -103,7 +105,7 @@
 }
 
 .inputBox {
-    background-color: rgba(85, 31, 31, 0.6);
+    background-color: rgba(37, 6, 6, 0.308);
     height: 25px;
     border: 0;
     border-radius: 8px;
