@@ -1,0 +1,69 @@
+.banner {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.color-banner {
+  background-color: #8b4444; /* Banner color */
+  position: absolute; /* Stretches behind everything */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Ensures it covers the entire area */
+  z-index: -1; /* Places it behind other elements */
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 2; /* Places it above the color banner */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8); /* Adds shadow below the image */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 10%; /* Adjust for vertical spacing from the top */
+  left: 5%; /* Distance from the left */
+  color: white; /* Change color as needed */
+  text-align: left; /* Align text to the left */
+  z-index: 3; /* Places it above the image */
+  font-size: 24px; /* Adjust font size as needed */
+  max-width: 90%; /* Optional: limit width to keep it within bounds */
+}
+
+.overlay-description {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  color: white;
+  text-align: left;
+  z-index: 3;
+  max-width: 90%;
+  font-size: 16px;
+}
+
+.top-text,
+.bottom-text {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.bottom-text {
+  margin: 20px;
+}
+
+.banner p {
+  color: white;
+  text-align: center;
+  margin: 20px 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
