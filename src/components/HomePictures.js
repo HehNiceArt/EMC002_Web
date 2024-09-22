@@ -5,6 +5,10 @@ import poolRoom from './pictures/pool-room.jpg'
 import restaurantRoom from './pictures/restaurant-room.jpg'
 import hotelRoom from './pictures/hotel-room.jpg'
 import registerImage from './pictures/register-img.png'
+import cameraIcon from './pictures/Frame 29.png'
+import bookingIcon from './pictures/Frame 30.png'
+import wifiIcon from './pictures/Frame 31.png'
+import nightIcon from './pictures/Frame 32.png'
 
 
 const ImageSlider = () => {
@@ -31,7 +35,27 @@ const ImageSlider = () => {
         </div>
         <div>
             <img src={registerImage} alt='Register' className='registerImage'/>
-            <p className='RegisterTitle'>A place Between Dreams and Reality</p>
+            <div className='RegisterSection'>
+              <p className='RegisterTitle'>A place Between Dreams and Reality</p>
+              <p className="RegisterDescription">"Become a member and embrace the in-between.
+                Join now, if you're ready to wander forever."
+              </p>
+              <button className='RegisterButton'>Register Now</button>
+            </div>
+            <div className='FlexContainer'>
+              <div className="Icon">
+                <img src={cameraIcon} className='CameraIcon'/>
+                <img src={bookingIcon} className='BookingIcon'/>
+              </div>   
+            </div>
+
+            <div className='FlexContainer2'>
+              <div className="Icon">
+                <img src={wifiIcon} className='WifiIcon'/>
+                <img src={nightIcon} className='NightIcon'/>
+              </div>   
+            </div>
+
         </div>
     </div>
     
