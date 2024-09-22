@@ -8,6 +8,10 @@ import RoomOverviewPage from "./pages/RoomOverviewPage";
 import CustomerFeedbackPage from "./pages/CustomerFeedbackPage";
 import LoginPage from "./pages/LoginPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import AARooms from './components/ARoom'
+import AAmenities from "./components/AAmenities";
+import AReservation from './components/AReservations';
+import AEvents from './components/AEvents';
 
 function App() {
   return (
@@ -22,6 +26,10 @@ function App() {
           <Route path="/RoomReservation" element={<RoomReservationPage />} />
           <Route path="/Login" element={<LoginPage />} />
           <Route path="/Admin" element={<AdminPage />} />
+          <Route path="/Admin/Rooms" element={<AARooms />} />
+          <Route path="/Admin/Amenities" element={<AAmenities />} />
+          <Route path="/Admin/Reservation" element={<AReservation />} />
+          <Route path="/Admin/Events" element={<AEvents />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
