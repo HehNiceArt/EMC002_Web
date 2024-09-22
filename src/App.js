@@ -8,6 +8,8 @@ import RoomOverviewPage from "./pages/RoomOverviewPage";
 import CustomerFeedbackPage from "./pages/CustomerFeedbackPage";
 import LoginPage from "./pages/LoginPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import ReviewPage from "./components/ReviewPage";
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
           <Route path="/RoomView" element={<RoomViewPage />} />
           <Route path="/RoomOverview" element={<RoomOverviewPage />} />
           <Route path="/RoomReservation" element={<RoomReservationPage />} />
+          <Route path="/CustomerFeedbackPage" element={<CustomerFeedbackPage />} />
           <Route path="/Login" element={<LoginPage />} />
           <Route path="/Admin" element={<AdminPage />} />
           <Route path="*" element={<NotFoundPage />} />
