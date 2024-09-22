@@ -11,9 +11,8 @@ export default function HomePage() {
             <Navbar />
             {/* Home Page */}
             <HomePictures />
-            Home Page
-         <Component2 />
-            <Footer/>
+            <Component2 />
+            <Footer />
         </div>
     )
 }
