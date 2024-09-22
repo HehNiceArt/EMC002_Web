@@ -16,13 +16,12 @@ function App() {
         <Routes>
           {/*Default location of the web */}
           <Route index element={<Home />} />
-
           {/*link of the page, which is path*/}
-          <Route path="RoomView" element={<RoomViewPage />} />
-          <Route path="RoomOverview" element={<RoomOverviewPage />} />
+          <Route path="/RoomView" element={<RoomViewPage />} />
+          <Route path="/RoomOverview" element={<RoomOverviewPage />} />
           <Route path="/RoomReservation" element={<RoomReservationPage />} />
-          <Route path="Login" element={<LoginPage />} />
-          <Route path="Admin" element={<AdminPage />} />
+          <Route path="/Login" element={<LoginPage />} />
+          <Route path="/Admin" element={<AdminPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
