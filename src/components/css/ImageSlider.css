@@ -1,7 +1,9 @@
-/* src/ImageSlider.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 .slider {
   position: relative;
-  width: 1900px;
+  width: 100vw;
   height: 600px;
   margin: auto;
   overflow: hidden;
@@ -9,7 +11,7 @@
 
 .registerImage {
   position: relative;
-  width: 1902px;
+  width: 100vw;
   height: 600px;
   margin: auto;
   overflow: hidden;
@@ -58,12 +60,75 @@
   right: 10px;
 }
 
-.RegisterTitle {
-  width: 1000px;
-  padding: 10px;
+.RegisterSection {
+  margin-left: 100px;
+  margin-right: 100px;
   display: flex;
+  position: absolute;
+  transform: translate(0%, -200%);
+  font-family: "Montserrat", sans-serif;
+}
+
+.RegisterTitle {
+  font-size: 30px;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-weight: bolder;
+  padding: 10px;
   justify-content: left;
-  transform: translateY(-400px);
-  margin-left: 50px;
-  color: aliceblue;
+}
+
+.RegisterDescription {
+  width: 610px;
+  padding: 10px 0 10px 0;
+  font-size: 20px;
+}
+
+.RegisterButton {
+  top: 50%;
+  background-color: rgb(97, 32, 32);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 13px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.RegisterContents {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+}
+
+.FlexContainer {
+  display: grid;
+  margin-left: auto;
+  gap: 10px;
+}
+
+.RegisterText {
+  display: flex;
+  flex-direction: column;
+}
+
+.FlexContainer2 {
+  transform: translateY(-850px);
+  margin-left: 1200px;
+  display: inline-block;
+}
+
+.CameraIcon,
+.BookingIcon,
+.WifiIcon,
+.NightIcon {
+  width: 100px;
+  margin-left: 75px;
+  margin-right: 75px;
 }
