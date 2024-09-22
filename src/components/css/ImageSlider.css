@@ -104,6 +104,7 @@
 .RegisterContents {
   display: flex;
   flex-direction: row;
+  margin-right: auto;
 }
 
 .FlexContainer {
