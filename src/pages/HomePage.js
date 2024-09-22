@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Component2 from "../components/Component2";
 import HomePictures from "../components/HomePictures";
 import Footer from "../components/Footer";
 
@@ -10,7 +11,9 @@ export default function HomePage() {
             <Navbar />
             {/* Home Page */}
             <HomePictures />
-            <Footer />
+            Home Page
+         <Component2 />
+            <Footer/>
         </div>
     )
 }
