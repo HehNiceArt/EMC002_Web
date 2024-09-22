@@ -29,13 +29,11 @@ const ImageSlider = () => {
         <img src={images[currentIndex]} className='imageSlider' alt={`Slide ${currentIndex + 1}`} />
         <button className="next" onClick={nextSlide}>❯</button>
       </div>
-      <div>
+      <div className='Slider'>
         <img src={registerImage} alt='Register' className='registerImage' />
         <p className='RegisterTitle'>A place Between Dreams and Reality</p>
       </div>
     </div>
-
-
   );
 };
 
