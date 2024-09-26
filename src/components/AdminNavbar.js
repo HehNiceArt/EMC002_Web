@@ -8,7 +8,7 @@ export default function AdminNavbar() {
             <h1>Admin User</h1>
             <li><Link to={'/Admin/Rooms'}>Rooms</Link></li>
             <li><Link to={'/Admin/Amenities'}>Amenities</Link></li>
-            <li><Link to={'/Admin/Reservations'}>Reservations</Link></li>
+            <li><Link to={'/Admin/Reservation'}>Reservations</Link></li>
             <li><Link to={'/Admin/Events'}>Events</Link></li>
         </div>
     )

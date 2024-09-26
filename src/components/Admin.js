@@ -1,7 +1,7 @@
 import React from "react";
 import AdminNavbar from "./AdminNavbar";
 import { Routes, Route } from "react-router-dom"; // Add this import
-import ARoom from './ARoom'; // Import your components
+import ARoom from './ARoom.js'; // Import your components
 import AAmenities from './AAmenities';
 import AReservations from './AReservations';
 import AEvents from './AEvents';
