@@ -12,6 +12,13 @@
     text-align: center;
 }
 
+.Admin-Content {
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+}
+
 .AN-Container>h1 {
     padding: 50px 20px 50px 20px;
 }
@@ -26,7 +33,6 @@
 }
 
 .Room-List {
-    width: 100vw;
     height: calc(100vh/3);
     padding: 50px;
     display: flex;
@@ -79,4 +85,20 @@
     flex-direction: column;
     background-color: #602121;
     border-radius: 20px;
+}
+
+.grid-line {
+    border: 1px solid rgb(247, 247, 247);
+}
+
+.grid-line>.col {
+    padding: 10px;
+}
+
+.grid-container {
+    padding: 0 100px;
+}
+
+.row {
+    text-align: center;
 }
