@@ -60,6 +60,10 @@ export default function ARoom() {
                     </Row>
                 </Container>
             </div>
+            <div className="Grid">
+
+            </div>
+
         </div>
     )
 }
