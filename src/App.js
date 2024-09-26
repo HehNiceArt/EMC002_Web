@@ -12,7 +12,6 @@ import AARooms from './components/ARoom'
 import AAmenities from "./components/AAmenities";
 import AReservation from './components/AReservations';
 import AEvents from './components/AEvents';
-import ReviewPage from "./components/ReviewPage";
 
 function App() {
   return (
