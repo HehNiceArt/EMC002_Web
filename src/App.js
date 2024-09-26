@@ -12,6 +12,7 @@ import AARooms from './components/ARoom'
 import AAmenities from "./components/AAmenities";
 import AReservation from './components/AReservations';
 import AEvents from './components/AEvents';
+import ReviewPage from "./components/ReviewPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/RoomView" element={<RoomViewPage />} />
           <Route path="/RoomOverview" element={<RoomOverviewPage />} />
           <Route path="/RoomReservation" element={<RoomReservationPage />} />
+          <Route path="/CustomerFeedbackPage" element={<CustomerFeedbackPage />} />
           <Route path="/Login" element={<LoginPage />} />
           <Route path="/Admin" element={<AdminPage />} />
           <Route path="/Admin/Rooms" element={<AARooms />} />

@@ -13,7 +13,7 @@ export default function Navbar() {
         <nav className="navbar">
           <Link to="/RoomOverview">Rooms</Link>
           <Link to="/RoomReservation">Find Reservations</Link>
-          <Link to="/CustomerReviews">Customer Reviews</Link>
+          <Link to="/CustomerFeedbackPage">Room Reviews</Link>
           <Link to="/login">Login / Register</Link>
         </nav>
       </header>
