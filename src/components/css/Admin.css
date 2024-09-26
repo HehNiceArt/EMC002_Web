@@ -10,6 +10,7 @@
     height: 100vh;
     background-color: #602121;
     text-align: center;
+    min-width: 250px;
 }
 
 .AN-Container>h1 {

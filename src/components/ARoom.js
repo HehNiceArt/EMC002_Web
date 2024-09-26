@@ -20,6 +20,10 @@ export default function ARoom() {
                     <p>Check Out</p>
                 </div>
             </div>
+            <div className="Grid">
+
+            </div>
+
         </div>
     )
 }
