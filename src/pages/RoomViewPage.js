@@ -5,13 +5,11 @@ import RoomView from "../components/RoomView";
 
 /* Cicero */
 export default function RoomViewPage() {
-    return (
-        <div>
-            <Navbar />
-            <RoomView />
-            Room View
-            <Footer />
-            
-        </div>
-    );
+  return (
+    <div>
+      <Navbar />
+      <RoomView />
+      <Footer />
+    </div>
+  );
 }
