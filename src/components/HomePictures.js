@@ -28,38 +28,36 @@ const ImageSlider = () => {
 
   return (
     <div>
-        <div className="slider">
-            <button className="prev" onClick={prevSlide}>❮</button>
-            <img src={images[currentIndex]} className='imageSlider' alt={`Slide ${currentIndex + 1}`} />
-            <button className="next" onClick={nextSlide}>❯</button>
-        </div>
-        <div>
-            <img src={registerImage} alt='Register' className='registerImage'/>
-            <div className='RegisterSection'>
+      <div className="slider">
+        <button className="prev" onClick={prevSlide}>❮</button>
+        <img src={images[currentIndex]} className='imageSlider' alt={`Slide ${currentIndex + 1}`} />
+        <button className="next" onClick={nextSlide}>❯</button>
+      </div>
+      <div className='Slider'>
+        <img src={registerImage} alt='Register' className='registerImage' />
+        <div className='RegisterSection'>
+          <div className='RegisterContents'>
+            <div className='RegisterText'>
               <p className='RegisterTitle'>A place Between Dreams and Reality</p>
               <p className="RegisterDescription">"Become a member and embrace the in-between.
                 Join now, if you're ready to wander forever."
               </p>
               <button className='RegisterButton'>Register Now</button>
             </div>
-            <div className='FlexContainer'>
-              <div className="Icon">
-                <img src={cameraIcon} className='CameraIcon'/>
-                <img src={bookingIcon} className='BookingIcon'/>
-              </div>   
+          </div>
+          <div className='FlexContainer'>
+            <div className="Icon">
+              <img src={cameraIcon} className='CameraIcon' alt='Camera' />
+              <img src={bookingIcon} className='BookingIcon' alt='Booking' />
             </div>
-
-            <div className='FlexContainer2'>
-              <div className="Icon">
-                <img src={wifiIcon} className='WifiIcon'/>
-                <img src={nightIcon} className='NightIcon'/>
-              </div>   
+            <div className="Icon">
+              <img src={wifiIcon} className='WifiIcon' alt='Wifi' />
+              <img src={nightIcon} className='NightIcon' alt='Night' />
             </div>
-
+          </div>
         </div>
+      </div>
     </div>
-
-
   );
 };
 
