@@ -9,7 +9,6 @@ export default function RoomViewPage() {
         <div>
             <Navbar />
             <RoomView />
-            Room View
             <Footer />
             
         </div>
