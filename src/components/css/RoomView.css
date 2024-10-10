@@ -1,3 +1,52 @@
-.background {
-    background-image: url(https://cdnb.artstation.com/p/assets/images/images/027/766/497/large/nihal-devang-finl.jpg?1592488454)
+.backgroundContainer {
+    position: relative; /* Make this container relative */
+    height: 100vh;     /* Ensure it covers the full height */
+}
+
+.backgroundImage {
+    display: block;     /* Use block display for the image */
+    width: 100%;       /* Make sure the image covers the container */
+    height: 100%;      /* Set height to fill the container */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    
+}
+
+.backgroundContainer::before {
+    content: '';                         /* Required for the pseudo-element */
+    position: absolute;                  /* Position it absolutely */
+    top: 0;                              /* Align to the top */
+    left: 0;                             /* Align to the left */
+    right: 0;                            /* Extend to the right */
+    bottom: 0;                           /* Extend to the bottom */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark tint with 50% opacity */
+    z-index: 5;                          /* Position it below the text */
+}
+
+.overlayText {
+    position: absolute;
+    height: auto;               /* Maintain aspect ratio */
+    width: 35%;                 /* Set width for the image */
+    transform: translateY(-200%)
+}
+
+.imageContainer {
+    display: flex;               /* Use flexbox for layout */
+    margin-top: 50px;           /* Space above the image */
+    margin-bottom: 500px;       /* Space below the image */
+    align-items: flex-start;     /* Align items at the start */
+    transform: translateX(5%);   /* Optional: Adjust position */
+}
+
+.roomPicture {
+    height: auto;               /* Maintain aspect ratio */
+    width: 35%;                 /* Set width for the image */
+}
+
+.infoBox {
+    margin-left: 20px;          /* Space between the image and the box */
+    padding: 20px;              /* Padding inside the box */
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with some transparency */
+    border-radius: 8px;         /* Rounded corners for the box */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    width: 200px;               /* Fixed width for the info box */
 }
