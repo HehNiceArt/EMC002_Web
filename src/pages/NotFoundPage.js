@@ -9,6 +9,9 @@ export default function NotFoundPage() {
             <div style={{height: '50vh', color: 'white', textAlign: 'center', fontSize: '50px', fontWeight:'bold'}}>
                 404 Not Found!
             </div>
+            <div>
+
+            </div>
             <Footer/>
         </div>
     )
