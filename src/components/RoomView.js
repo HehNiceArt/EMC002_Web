@@ -1,13 +1,14 @@
 import React from "react";
 import "../components/css/RoomView.css";
 import Dropdown from "react-bootstrap/Dropdown";
+import Calendar from "../components/Calendar";
 
 export default function RoomView() {
   return (
     <div
       style={{
         backgroundImage:
-          "url(https://cdnb.artstation.com/p/assets/images/images/027/766/497/large/nihal-devang-finl.jpg?1592488454)",
+          "linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(https://cdnb.artstation.com/p/assets/images/images/027/766/497/large/nihal-devang-finl.jpg?1592488454)",
         backgroundSize: "cover",
         height: "150vh",
       }}
@@ -70,17 +71,59 @@ export default function RoomView() {
           <p>Liminal Escapes Cares - Your Well-being In Our Care</p>
         </div>
 
-        <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Dropdown Button
-          </Dropdown.Toggle>
+        <div className="bookingBox">
+          <p style={{ fontSize: "30px", fontWeight: "bold" }}>
+            Book This Offer
+          </p>
+          <p style={{ fontSize: "20px" }}>From PHP 1,999 Average Per Night</p>
+          <div className="blackLine"></div>
+          <p style={{ fontSize: "30px", fontWeight: "bold", padding: "8px" }}>
+            Plan Your Visit
+          </p>
+          <div className="bookingDetails">
+            <Dropdown className="bookingLocation">
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Location <br />
+                Edsa, Kamuning
+              </Dropdown.Toggle>
 
-          <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
+              <Dropdown.Menu>
+                <Dropdown.Item href="#/action-1">Edsa, Cubao</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">North Edsa</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Edsa, Guadalupe</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Calendar />
+            <Dropdown className="bookingRooms">
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Rooms
+                <br />1 Room, 1 Adult, 0 Children
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item href="#/action-1">Room +</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Room -</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Adult +</Dropdown.Item>
+                <Dropdown.Item href="#/action-4">Adult -</Dropdown.Item>
+                <Dropdown.Item href="#/action-5">Children +</Dropdown.Item>
+                <Dropdown.Item href="#/action-6">Children -</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Dropdown className="bookingPromoCode">
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Promo Code <br />
+                WELCOMETOLIMINAL
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <button className="bookingSearch">Search</button>
+          </div>
+        </div>
       </div>
     </div>
   );
