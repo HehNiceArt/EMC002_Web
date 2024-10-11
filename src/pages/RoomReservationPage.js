@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import RoomReservationComponent from "../components/RoomReservationComponent";
+import ReservationFooter from "../components/ReservationFooter";
 
-/* Ana Manabat*/
 export default function RoomReservationPage() {
-    return (
-        <div>
-            <Navbar />
-            Room Reservation
-        </div>
-    )
+  return (
+    <div>
+      <Navbar />
+      <RoomReservationComponent />
+      <ReservationFooter />
+    </div>
+  );
 }

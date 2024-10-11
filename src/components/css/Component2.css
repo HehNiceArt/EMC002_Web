@@ -67,3 +67,45 @@
   width: 100%;
   overflow: visible;
 }
+<<<<<<< Updated upstream
+=======
+
+.image-container2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+/* text ng the hole */
+.bottom-description {
+  color: white;
+  text-align: justify;
+  margin: 20px 20px;
+  font-size: 16px;
+}
+
+.learn-more {
+  background-color: transparent;
+  color: whitesmoke;
+  border: 5px solid whitesmoke;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.learn-more:hover {
+  background-color: white;
+  color: #8b4444;
+}
+
+/* Learn more sa ilalim */
+.bottom-button {
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 25px;
+  margin-left: 20px;
+}
+>>>>>>> Stashed changes
