@@ -41,7 +41,7 @@
 
 .Login-Form {
     width: calc(100% / 2);
-    min-width: 400px;
+    min-width: 600px;
     height: auto;
     min-height: 600px;
 
@@ -146,4 +146,54 @@
     padding: 8px;
     cursor: pointer;
     font-size: 24px;
+}
+
+.toggleButtonContainer {
+    display: flex;
+    justify-content: center;
+    /* Center the button horizontally */
+    margin-top: 20px;
+    /* Add some space above the button */
+}
+
+.toggleButton {
+    background-color: rgba(62, 7, 7, 0.6);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 20px;
+}
+
+.buttonContainer>h1 {
+    font-size: 100px;
+}
+
+.Login-Choice {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.formButton {
+    background-color: rgba(62, 7, 7, 0.6);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 28px;
+    margin: 10px 0px;
+    width: 200px;
 }
