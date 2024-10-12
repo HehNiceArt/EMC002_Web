@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import AdminNavbar from "./AdminNavbar";
 
 import './css/Admin.css'
@@ -8,6 +8,20 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
 export default function AAmenities() {
+    const [amenities, setAmenities] = useState([]);
+    useEffect(() => {
+        const fetchAmenities = async () => {
+            try {
+                const response = await fetch('http://localhost:3001/api/amenities');
+                const data = await response.json();
+                setAmenities(data);
+            } catch (error) {
+                console.error("Error fetching amenities:", error);
+            }
+        };
+        fetchAmenities();
+    }, []);
+
     return (
         <div className="Admin-Container">
             <AdminNavbar />
