@@ -18,6 +18,14 @@ const roomSchema = new mongoose.Schema({
         type: [String], // Array of strings for amenities
         default: [],
     },
+    checkInQuantity: {
+        type: Number,
+        default: 0,
+    },
+    checkOutQuantity: {
+        type: Number,
+        default: 0,
+    },
     createdAt: {
         type: Date,
         default: Date.now,

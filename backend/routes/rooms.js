@@ -13,13 +13,15 @@ router.get('/', async (req, res) => {
     }
 });
 router.post('/', async (req, res) => {
-    const { type, capacity, price, amenities } = req.body;
+    const { type, capacity, price, amenities, checkInQuantity, checkOutQuantity } = req.body;
 
     const newRoom = new Room({
         type,
         capacity,
         price,
         amenities,
+        checkInQuantity,
+        checkOutQuantity,
     });
 
     try {

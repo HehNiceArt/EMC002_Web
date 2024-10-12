@@ -22,6 +22,14 @@ const reservationSchema = new mongoose.Schema({
         enum: ['New Booking', 'Check In', 'Check Out'],
         required: true,
     },
+    booked: {
+        type: Number,
+        default: 0,
+    },
+    availableRooms: {
+        type: Number,
+        default: 0,
+    },
     createdAt: {
         type: Date,
         default: Date.now,
