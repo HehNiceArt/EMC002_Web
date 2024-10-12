@@ -6,7 +6,7 @@ export default function Calendar() {
     <div
       style={{
         display: "flex",
-        width: "100%",
+        width: "20vw",
         border: "2px solid black",
         borderRadius: "5px 5px 5px 5px",
       }}
