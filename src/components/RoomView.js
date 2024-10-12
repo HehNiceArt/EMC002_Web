@@ -72,12 +72,26 @@ export default function RoomView() {
         </div>
 
         <div className="bookingBox">
-          <p style={{ fontSize: "30px", fontWeight: "bold" }}>
+          <p
+            style={{
+              fontSize: "30px",
+              fontWeight: "bold",
+              marginBottom: "0px",
+            }}
+          >
             Book This Offer
           </p>
-          <p style={{ fontSize: "20px" }}>From PHP 1,999 Average Per Night</p>
+          <p style={{ fontSize: "20px", marginBottom: "0px" }}>
+            From PHP 1,999 Average Per Night
+          </p>
           <div className="blackLine"></div>
-          <p style={{ fontSize: "30px", fontWeight: "bold", padding: "8px" }}>
+          <p
+            style={{
+              fontSize: "30px",
+              fontWeight: "bold",
+              marginBottom: "0px",
+            }}
+          >
             Plan Your Visit
           </p>
           <div className="bookingDetails">
