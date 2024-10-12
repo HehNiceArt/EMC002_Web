@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <div className="Footer1">
       <div className="Footer2">
-        <p>
+        <p className="FooterText">
           <b>© 2024 Liminal Escapes</b> Powered by Backrooms
         </p>
       </div>
