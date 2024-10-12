@@ -6,11 +6,14 @@ import './index.css'; // Your index CSS
 import './App.css'; // Your App CSS
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { AuthProvider } from './AuthContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <AuthProvider>
+      <App />
+    </AuthProvider>
   </React.StrictMode>
 );
 
