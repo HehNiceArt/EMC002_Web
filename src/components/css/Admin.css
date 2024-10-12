@@ -6,11 +6,18 @@
 }
 
 .AN-Container {
-    width: fit-content;
+    width: auto;
     height: 100vh;
     background-color: #602121;
     text-align: center;
-    min-width: 250px;
+    min-width: 300px;
+}
+
+.Admin-Content {
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: column;
 }
 
 .AN-Container>h1 {
@@ -27,7 +34,6 @@
 }
 
 .Room-List {
-    width: 100vw;
     height: calc(100vh/3);
     padding: 50px;
     display: flex;
@@ -80,4 +86,20 @@
     flex-direction: column;
     background-color: #602121;
     border-radius: 20px;
+}
+
+.grid-line {
+    border: 1px solid rgb(247, 247, 247);
+}
+
+.grid-line>.col {
+    padding: 10px;
+}
+
+.grid-container {
+    padding: 0 100px;
+}
+
+.row {
+    text-align: center;
 }

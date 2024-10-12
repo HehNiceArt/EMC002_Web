@@ -33,7 +33,7 @@ const ImageSlider = () => {
         <img src={images[currentIndex]} className='imageSlider' alt={`Slide ${currentIndex + 1}`} />
         <button className="next" onClick={nextSlide}>❯</button>
       </div>
-      <div>
+      <div className='Slider'>
         <img src={registerImage} alt='Register' className='registerImage' />
         <div className='RegisterSection'>
           <div className='RegisterContents'>
@@ -58,8 +58,6 @@ const ImageSlider = () => {
         </div>
       </div>
     </div>
-
-
   );
 };
 

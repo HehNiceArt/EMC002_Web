@@ -1,6 +1,16 @@
 import React from "react";
+import ReviewPage from "../components/ReviewPage.js";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 
 /* Rafael Deligero */
 export default function CustomerFeedbackPage() {
-  return <div>Customer Feedback</div>;
+  return (
+        <div>
+            <Navbar/>
+            <ReviewPage/>
+            <Footer/>
+        </div>
+  );
 }

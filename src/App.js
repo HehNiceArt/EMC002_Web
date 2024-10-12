@@ -24,6 +24,7 @@ function App() {
           <Route path="/RoomView" element={<RoomViewPage />} />
           <Route path="/RoomOverview" element={<RoomOverviewPage />} />
           <Route path="/RoomReservation" element={<RoomReservationPage />} />
+          <Route path="/CustomerFeedbackPage" element={<CustomerFeedbackPage />} />
           <Route path="/Login" element={<LoginPage />} />
           <Route path="/Admin" element={<AdminPage />} />
           <Route path="/Admin/Rooms" element={<AARooms />} />
