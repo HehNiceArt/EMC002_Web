@@ -84,10 +84,6 @@ export default function ARoom() {
                     ))}
                 </Container>
             </div>
-            <div className="Grid">
-
-            </div>
-
         </div>
     )
 }

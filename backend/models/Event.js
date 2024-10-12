@@ -18,6 +18,14 @@ const eventSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    registered: {
+        type: Number,
+        default: 0,
+    },
+    cost: {
+        type: Number,
+        default: 0,
+    },
     createdAt: {
         type: Date,
         default: Date.now,

@@ -26,6 +26,10 @@ const reservationSchema = new mongoose.Schema({
         type: Number,
         default: 0,
     },
+    location: {
+        type: String,
+        required: true,
+    },
     availableRooms: {
         type: Number,
         default: 0,
