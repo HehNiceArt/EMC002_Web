@@ -1,4 +1,5 @@
 import React from "react";
+import "../components/css/Calendar.css";
 
 export default function Calendar() {
   return (
@@ -17,7 +18,7 @@ export default function Calendar() {
           marginRight: "auto",
         }}
       >
-        <label for="start" style={{ color: "white" }}>
+        <label className="label" for="start" style={{ color: "white" }}>
           Check in Date:
         </label>
 
@@ -31,7 +32,7 @@ export default function Calendar() {
           marginRight: "auto",
         }}
       >
-        <label for="start" style={{ color: "white" }}>
+        <label className="label" for="start" style={{ color: "white" }}>
           Check out Date:
         </label>
 
