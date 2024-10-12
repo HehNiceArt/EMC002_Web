@@ -1,0 +1,241 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-y: auto;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  padding: 0;
+}
+
+form {
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  min-height: 1200px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  justify-items: left;
+  text-align: left;
+  margin-left: 205px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 750px;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: transparent;
+  background-color: rgba(96, 33, 33, 0.55);
+  border-radius: 30px;
+  font-size: 1.7rem;
+  color: white;
+  outline: none;
+  text-align: left;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: rgba(96, 33, 33, 0.7);
+  border-color: transparent;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: rgba(179, 32, 32, 0.8);
+  border-color: #0056b3;
+}
+
+/* Book Now */
+.form-container button {
+  background-color: transparent;
+  color: whitesmoke;
+  border: 3px solid whitesmoke;
+  border-radius: 35px;
+  padding: 10px 20px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 220px;
+  height: 70px;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 3px solid #ffffff;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  opacity: 100;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #b32020;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #b32020;
+  border-color: transparent;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✔";
+  position: absolute;
+  top: -5px;
+  left: 8px;
+  font-size: 40px;
+  color: white;
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+  border-color: #b32020;
+}
+
+input[type="checkbox"]:hover {
+  border-color: #fff;
+}
+
+#textTerms {
+  font-size: 30px;
+  padding-top: 8px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.divTerms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 80px;
+  text-align: center;
+  padding: 40px;
+}
+
+#end-button1 {
+  background-color: transparent;
+  color: whitesmoke;
+  border: 3px solid whitesmoke;
+  border-radius: 35px;
+  padding: 10px 10px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 400px;
+  height: 80px;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#end-button1:hover {
+  background-color: white;
+  color: #8b4444;
+}
+
+#end-button2 {
+  background-color: transparent;
+  color: whitesmoke;
+  border: 3px solid whitesmoke;
+  border-radius: 35px;
+  padding: 10px 10px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 400px;
+  height: 80px;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 180px;
+}
+
+#end-button2:hover {
+  background-color: white;
+  color: #8b4444;
+}
+
+/* footer part */
+p {
+  color: white;
+  font-size: 16px;
+}
+
+.back-to-top {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.back-to-top:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.Footer1 {
+  display: flex;
+  width: 100%;
+  background-color: rgba(96, 33, 33, 1);
+  padding-top: 0;
+  justify-content: space-between;
+}
+
+.Footer2 {
+  padding: 20px 0px 0px 0px;
+  text-align: left;
+  margin-left: 30px;
+}
