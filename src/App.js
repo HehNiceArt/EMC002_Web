@@ -4,7 +4,6 @@ import Home from "./pages/HomePage";
 import RoomReservationPage from "./pages/RoomReservationPage";
 import AdminPage from "./pages/AdminPage";
 import RoomViewPage from "./pages/RoomViewPage";
-import RoomOverviewPage from "./pages/RoomOverviewPage";
 import CustomerFeedbackPage from "./pages/CustomerFeedbackPage";
 import LoginPage from "./pages/LoginPage";
 import NotFoundPage from "./pages/NotFoundPage";
@@ -22,9 +21,8 @@ function App() {
           <Route index element={<Home />} />
           {/*link of the page, which is path*/}
           <Route path="/RoomView" element={<RoomViewPage />} />
-          <Route path="/RoomOverview" element={<RoomOverviewPage />} />
           <Route path="/RoomReservation" element={<RoomReservationPage />} />
-          <Route path="/CustomerFeedbackPage" element={<CustomerFeedbackPage />} />
+          <Route path="/Rooms" element={<CustomerFeedbackPage />} />
           <Route path="/Login" element={<LoginPage />} />
           <Route path="/Admin" element={<AdminPage />} />
           <Route path="/Admin/Rooms" element={<AARooms />} />

@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import './css/Login.css'
+import { useAuth } from "../AuthContext";
+import { useNavigate } from "react-router-dom";
 
-const RegistrationForm = (props) => {
+const RegistrationForm = ({ setIsRegistered }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
+    const { login } = useAuth();
+    const navigate = useNavigate();
 
-    const onButtonClick = () => {
+    const onButtonClick = async () => {
         if (!email || !firstName || !lastName || !password || !confirmPassword) {
             alert("Please fill in all required fields.");
             return;
@@ -17,11 +21,27 @@ const RegistrationForm = (props) => {
             alert("Password is incorrect!");
             return;
         }
-        console.log("Email: ", email);
-        console.log("firstName: ", firstName);
-        console.log("lastName: ", lastName);
-        console.log("password: ", password);
-        console.log("confirmPass: ", confirmPassword);
+        try {
+            const response = await fetch('http://localhost:3001/api/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email, password, firstName, lastName }),
+            });
+            const data = await response.json();
+            if (response.ok) {
+                login(data.user);
+                alert(data.message);
+                setIsRegistered(true);
+                navigate('/Login');
+            } else {
+                alert(data.message);
+            }
+        } catch (error) {
+            console.error("Error during registration:", error);
+            alert("Registration failed. Please try again.");
+        }
     }
     return (
         <div className="Login-Form">

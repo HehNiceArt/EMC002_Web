@@ -173,7 +173,7 @@ const ReservationForm = () => {
 
         <hr />
 
-        <h2>
+        <h2 className="refund">
           Cancellation and <br />
           Refund Policy
         </h2>
