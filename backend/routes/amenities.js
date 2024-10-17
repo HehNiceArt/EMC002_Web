@@ -15,12 +15,14 @@ router.get('/', async (req, res) => {
 
 // Create a new amenity
 router.post('/', async (req, res) => {
-    const { name, description, count } = req.body;
+    const { name, description, count, roomService, internetAccess } = req.body;
 
     const newAmenity = new Amenity({
         name,
         description,
         count,
+        roomService,
+        internetAccess,
     });
 
     try {
@@ -34,12 +36,12 @@ router.post('/', async (req, res) => {
 // Update an existing amenity
 router.put('/:id', async (req, res) => {
     const { id } = req.params;
-    const { name, description, count } = req.body;
+    const { name, description, count, roomService, internetAccess } = req.body;
 
     try {
         const updatedAmenity = await Amenity.findByIdAndUpdate(
             id,
-            { name, description, count },
+            { name, description, count, roomService, internetAccess },
             { new: true } // Return the updated document
         );
         res.json(updatedAmenity);

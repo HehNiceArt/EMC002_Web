@@ -37,13 +37,16 @@ export default function Component2() {
         <div className="hole-content">
           <h2 className="bottom-text">The Hole</h2>
           <p className="bottom-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            The Hole is a small, dimly lit room with bare, cracked walls and a
+            low, oppressive ceiling. Its air feels thick, almost suffocating, as
+            if the space itself is trying to swallow all sound and light. The
+            only feature of note is a large, circular pit in the center of the
+            floor, its depths unknowable and unnerving. The atmosphere is heavy
+            with a sense of isolation, making the room feel both ancient and
+            unsettling, as if it exists outside the flow of time. No one can
+            recall its purpose, but everyone who enters seems to leave with a
+            lingering unease, as though something—unspeakable and ancient—still
+            watches from within the depths.
           </p>
           <button className="learn-more bottom-button">Learn More</button>
         </div>

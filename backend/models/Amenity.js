@@ -14,6 +14,14 @@ const amenitySchema = new mongoose.Schema({
         type: Number,
         default: 0, // Default count is 0
     },
+    roomService: {
+        type: Number,
+        default: 0,
+    },
+    internetAccess: {
+        type: Number,
+        default: 0,
+    },
     createdAt: {
         type: Date,
         default: Date.now,

@@ -13,13 +13,15 @@ router.get('/', async (req, res) => {
     }
 });
 router.post('/', async (req, res) => {
-    const { name, date, location, description } = req.body;
+    const { name, date, location, description, registered, cost } = req.body;
 
     const newEvent = new Event({
         name,
         date,
         location,
         description,
+        registered,
+        cost
     });
 
     try {

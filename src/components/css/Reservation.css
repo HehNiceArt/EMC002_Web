@@ -86,7 +86,7 @@ select:focus {
   margin-bottom: 100px;
 }
 
-hr {
+.line {
   margin: 20px 0;
   border: 0;
   border-top: 3px solid #ffffff;
