@@ -5,15 +5,15 @@
   
   #Main {
     background-color: #9D5555;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);     
-    margin: 50% auto;   
+    margin: 0% auto;   
     text-align: center;     
-    height: 100%;   
-    width: 70%;
+    height: 90%;   
+    width: 90%;
     align-content: center;
     border-radius: 15%;
     display: flex;
     flex-direction: column;
+    
   }
   
   .container{
@@ -27,26 +27,27 @@
   .FeedbackName{
     justify-content: start;
     text-align: start;
-    padding-left: 70px;
+    padding-left: 55px;
   }
   .TextArea {
     padding: 0;
   }
   .submit{
-    width: 70%;
+    width: 90%;
     display: flex;
     flex-direction: column;  
     background-color: #9D5555;
     margin-right: auto;
     margin-left: auto;
-    height: 200px !important;
+    height: 50% !important;
     color: white;
-    padding: 25px;
-    border-radius: 15%;
+    padding: 10%;
+    border-radius: 20%;
     resize: none;
     border: none;
+    font-size: smaller;
+    
   }
-  
   
   #Submit{
     text-align: right;
@@ -58,27 +59,29 @@
   h1{
     color: white;
     font-weight: lighter;
+
   }
+
   h2{
     color: white;
     font-weight: lighter;
     font-style: italic;
     padding: 5px;
     align-content: flex-start;
+    font-size: large;
   }
   
   
-  button{
+  .Submitbutton {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     background-color: #602121;
-    border-width: 3px;
     border-style: solid;
     border-radius: 20px;
     border-color: white;
-    width: 90px;
-    height: 40px;
+    width: 20%;
+    height: auto;
     display: -moz-stack;
   }
   

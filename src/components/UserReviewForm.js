@@ -1,22 +1,29 @@
-import './UserReviewForm.css';
+import './css/UserReview.css';
 import React from 'react';
-import Starrate from './components/starrate.js';
+import RevStarrate from "../components/RevFormStar.js";
 
 function UserReviewForm() {
   return (
     <div id="Main">
       <div className="RateStars">
-        <h1>Rate your experience</h1>
 
+        {/* Title  */}
+        <h1 className='RevFormTitle'>Rate your experience</h1> 
       </div>
+
+        {/* Text/User Input  */}
       <div className='TextArea'>
+
+        {/* Toggling of starsRating  */}
         <div className='container'>
-          <Starrate />
+          <RevStarrate />
           <h2 className='FeedbackName'>Feedback</h2>
           <textarea id="Feedback" className='submit' >
             We'd love to hear your suggestions
           </textarea>
-          <div id='Submit'>
+
+          {/* Submit Button  */}
+          <div id='Submitbutton'>
             <button type="button" id='submit'>
               Submit
             </button>

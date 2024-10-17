@@ -9,7 +9,9 @@ export default function Starrate() {
                 const currentRate = index + 1;
 
                 return (
+                    
                     <div key={index} style={{ cursor: "pointer" }}>
+                        {/* Star turns white when click  */}
                         <FaStar
                             size={20}
                             color={currentRate <= rating ? "White" : "grey"}

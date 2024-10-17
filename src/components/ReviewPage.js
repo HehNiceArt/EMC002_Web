@@ -3,15 +3,29 @@ import './css/ReviewPage.css';
 import StarRate from "../components/starrate.js";
 import UserReviewForm from "./UserReviewForm";
 
-function ReviewPage() {
-    // Initialize state for ratings
-    const [ratings, setRatings] = useState(Array(9).fill(0)); // 9 ratings for 9 rooms
+const ReviewPage = () => {
+    // makes review and stars visible
+    const [ratings, setRatings] = useState(Array(9).fill(0));
+    const [showForm, setShowForm] = useState(false);
+    const [selectedRoom, setSelectedRoom] = useState("");
 
-    // Function to update the rating for a specific index
+    //update the rating for a specific index
     const handleRatingChange = (index, newRating) => {
         const updatedRatings = [...ratings];
         updatedRatings[index] = newRating;
         setRatings(updatedRatings);
+    };
+
+    // Function to handle image click
+    const handleImageClick = (roomName) => {
+        setSelectedRoom(roomName);
+        setShowForm(true);
+    };
+
+    // closing form (put button pa)
+    const handleCloseForm = () => {
+        setShowForm(false);
+        setSelectedRoom("");
     };
 
     return (
@@ -21,9 +35,27 @@ function ReviewPage() {
                 <table>
                     <tbody>
                         <tr>
-                            <th><img src ="https://i.pinimg.com/564x/ca/89/1c/ca891c020ab2de8e1cef204583e00bde.jpg"/></th>
-                            <th><img src="https://i.pinimg.com/564x/0d/85/51/0d8551b6acf18b5d889416c227665df8.jpg" alt="Bedroom" /></th>
-                            <th><img src="https://i.pinimg.com/564x/2e/83/cd/2e83cd30d0fc588fca06d2ab907def86.jpg" alt="Symposium" /></th>
+                            <th>
+                                <img 
+                                    src="https://i.pinimg.com/564x/ca/89/1c/ca891c020ab2de8e1cef204583e00bde.jpg" 
+                                    alt="Backroom" 
+                                    onClick={() => handleImageClick('Backroom')}
+                                />
+                            </th>
+                            <th>
+                                <img 
+                                    src="https://i.pinimg.com/564x/0d/85/51/0d8551b6acf18b5d889416c227665df8.jpg" 
+                                    alt="Bedroom" 
+                                    onClick={() => handleImageClick('Bedroom')}
+                                />
+                            </th>
+                            <th>
+                                <img 
+                                    src="https://i.pinimg.com/564x/2e/83/cd/2e83cd30d0fc588fca06d2ab907def86.jpg" 
+                                    alt="Symposium" 
+                                    onClick={() => handleImageClick('Symposium')}
+                                />
+                            </th>
                         </tr>
                         <tr className="Stars">
                             <td><StarRate rating={ratings[0]} setRating={(newRating) => handleRatingChange(0, newRating)} /></td>
@@ -41,9 +73,27 @@ function ReviewPage() {
                 <table>
                     <tbody>
                         <tr>
-                            <th><img src="https://i.pinimg.com/736x/df/9d/e4/df9de4a240708ba572c60b42c1effbf2.jpg" alt="Cinema" /></th>
-                            <th><img src="https://i.pinimg.com/564x/81/b6/8d/81b68dad0e5fdfcec266a51fc06325de.jpg" alt="Subway" /></th>
-                            <th><img src="https://i.pinimg.com/564x/e0/21/f3/e021f3b2abb63c8229ff10ee008cccc4.jpg" alt="Mall" /></th>
+                            <th>
+                                <img 
+                                    src="https://i.pinimg.com/736x/df/9d/e4/df9de4a240708ba572c60b42c1effbf2.jpg" 
+                                    alt="Cinema" 
+                                    onClick={() => handleImageClick('Cinema')}
+                                />
+                            </th>
+                            <th>
+                                <img 
+                                    src="https://i.pinimg.com/564x/81/b6/8d/81b68dad0e5fdfcec266a51fc06325de.jpg" 
+                                    alt="Subway" 
+                                    onClick={() => handleImageClick('Subway')}
+                                />
+                            </th>
+                            <th>
+                                <img 
+                                    src="https://i.pinimg.com/564x/e0/21/f3/e021f3b2abb63c8229ff10ee008cccc4.jpg" 
+                                    alt="Mall" 
+                                    onClick={() => handleImageClick('Mall')}
+                                />
+                            </th>
                         </tr>
                         <tr className="Stars">
                             <td><StarRate rating={ratings[3]} setRating={(newRating) => handleRatingChange(3, newRating)} /></td>
@@ -61,9 +111,27 @@ function ReviewPage() {
                 <table>
                     <tbody>
                         <tr>
-                            <th><img src="https://i.pinimg.com/564x/b0/3b/2d/b03b2dd43bf560dedd73aebb5caa59a2.jpg" alt="Hallway" /></th>
-                            <th><img src="https://i.pinimg.com/564x/bb/94/50/bb94501fceaacff9078ad785f02d2d2f.jpg" alt="Gym" /></th>
-                            <th><img src="https://i.pinimg.com/564x/75/e2/79/75e279cad00ac2871d863bfafa491857.jpg" alt="Cafe" /></th>
+                            <th>
+                                <img 
+                                    src="https://i.pinimg.com/564x/b0/3b/2d/b03b2dd43bf560dedd73aebb5caa59a2.jpg" 
+                                    alt="Hallway" 
+                                    onClick={() => handleImageClick('Hallway')}
+                                />
+                            </th>
+                            <th>
+                                <img 
+                                    src="https://i.pinimg.com/564x/bb/94/50/bb94501fceaacff9078ad785f02d2d2f.jpg" 
+                                    alt="Gym" 
+                                    onClick={() => handleImageClick('Gym')}
+                                />
+                            </th>
+                            <th>
+                                <img 
+                                    src="https://i.pinimg.com/564x/75/e2/79/75e279cad00ac2871d863bfafa491857.jpg" 
+                                    alt="Cafe" 
+                                    onClick={() => handleImageClick('Cafe')}
+                                />
+                            </th>
                         </tr>
                         <tr className="Stars">
                             <td><StarRate rating={ratings[6]} setRating={(newRating) => handleRatingChange(6, newRating)} /></td>
@@ -78,6 +146,14 @@ function ReviewPage() {
                     </tbody>
                 </table>
             </div>
+
+            {showForm && (
+                <div className="overlay">
+                    <div className="form-container">
+                        <UserReviewForm roomName={selectedRoom} onClose={handleCloseForm} />
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

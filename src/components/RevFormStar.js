@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { IoIosStar } from "react-icons/io"; // npm install react-icons --save
-import './starrate.css'
-export default function Starrate() {
+export default function RevStarrate() {
     const [rating, setRating] = useState(0); // Initialize rating as a number
 
     return (
@@ -12,7 +11,7 @@ export default function Starrate() {
                 return (
                     <div key={index} style={{ cursor: "pointer" }}>
                         <IoIosStar 
-                            size={70}
+                            size={55}
                             color={currentRate <= rating ? "White" : "#9D5555"}
                             onClick={() => setRating(currentRate)}
                         />
