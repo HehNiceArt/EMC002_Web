@@ -95,7 +95,7 @@ export default function RoomView() {
             Plan Your Visit
           </p>
           <div className="bookingDetails">
-            <Dropdown className="bookingLocation">
+            <Dropdown className="bookingLocation dropdown">
               <Dropdown.Toggle variant="success" id="dropdown-basic">
                 Location <br />
                 Edsa, Kamuning

@@ -1,6 +1,6 @@
 import './css/UserReview.css';
 import React from 'react';
-import RevStarrate from "../components/RevFormStar.js";
+import Starrate from './starrate.js';
 
 function UserReviewForm() {
   return (
