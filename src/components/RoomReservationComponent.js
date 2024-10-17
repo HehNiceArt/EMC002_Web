@@ -112,7 +112,7 @@ const ReservationForm = () => {
         <br />
 
         {/* Divider */}
-        <hr />
+        <hr className="line" />
 
         <label>
           Full Name
@@ -171,7 +171,7 @@ const ReservationForm = () => {
           Book Now
         </button>
 
-        <hr />
+        <hr className="line" />
 
         <h2 className="refund">
           Cancellation and <br />
