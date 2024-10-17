@@ -56,13 +56,13 @@
   
   }
   
-  h1{
+  .RevFormTitle{
     color: white;
     font-weight: lighter;
 
   }
 
-  h2{
+  .FeedbackName{
     color: white;
     font-weight: lighter;
     font-style: italic;
